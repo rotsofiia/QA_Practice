@@ -1,1 +1,1 @@
-https://sofiiaqa.atlassian.net/jira/software/projects/QP/boards/34?selectedIssue=QP-20
+https://drive.google.com/file/d/1GgiYdKgb1geby_D4kYbO5P1PaqNeNMeY/view?usp=sharing
