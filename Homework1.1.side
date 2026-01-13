@@ -1,0 +1,517 @@
+{
+  "id": "59f1e792-3a10-40c7-bf21-26e19910d6a1",
+  "version": "2.0",
+  "name": "Homework ",
+  "url": "https://silpo.ua",
+  "tests": [{
+    "id": "8fa20925-62c7-449b-a59f-832953b8bddd",
+    "name": "Subcategory select",
+    "commands": [{
+      "id": "4cb1a5df-fa04-4c97-b21d-1d9c91300647",
+      "comment": "",
+      "command": "open",
+      "target": "https://silpo.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c522e3f2-888f-4b06-a937-f0734bf4979f",
+      "comment": "",
+      "command": "click",
+      "target": "id=category-menu-button",
+      "targets": [
+        ["id=category-menu-button", "id"],
+        ["css=#category-menu-button", "css:finder"],
+        ["xpath=//button[@id='category-menu-button']", "xpath:attributes"],
+        ["xpath=//shop-silpo-category-menu-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Всі товари')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0eda760-ca18-47c4-9397-d9e416a86d37",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фрукти, овочі",
+      "targets": [
+        ["linkText=Фрукти, овочі", "linkText"],
+        ["css=.menu-categories__link_hovered > .menu-categories__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Фрукти, овочі')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/category/frukty-ovochi-4788')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фрукти, овочі')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7e769cb-a0a8-4759-880f-69908bf6f80d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.chips__item:nth-child(2) > .chips__button",
+      "targets": [
+        ["css=.chips__item:nth-child(2) > .chips__button", "css:finder"],
+        ["xpath=//a[contains(@href, '/category/sezonni-ovochi-frukty-4789')]", "xpath:href"],
+        ["xpath=//shop-silpo-chips/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e76d222a-9caf-404c-84e2-416685dd9b71",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(text(),'Сезонні овочі, фрукти')]",
+      "targets": [
+        ["linkText=Сезонні овочі, фрукти", "linkText"],
+        ["css=.breadcrumbs-list__item--active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Сезонні овочі, фрукти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/category/sezonni-ovochi-frukty-4789')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Сезонні овочі, фрукти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23e46fca-52a3-4a4d-ac91-00e5fb1ff1e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog__products-title",
+      "targets": [
+        ["css=.catalog__products-title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Сезонні овочі, фрукти')]", "xpath:innerText"]
+      ],
+      "value": "Сезонні овочі, фрукти"
+    }]
+  }, {
+    "id": "ae0c7fe3-1510-49fa-a9cb-f5ced321a884",
+    "name": "Valid Price Range",
+    "commands": [{
+      "id": "f7fea5b1-77cf-417e-901e-a7a74aca7b9e",
+      "comment": "",
+      "command": "open",
+      "target": "https://silpo.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38550975-116e-4134-88a0-6a2332225093",
+      "comment": "",
+      "command": "click",
+      "target": "id=category-menu-button",
+      "targets": [
+        ["id=category-menu-button", "id"],
+        ["css=#category-menu-button", "css:finder"],
+        ["xpath=//button[@id='category-menu-button']", "xpath:attributes"],
+        ["xpath=//shop-silpo-category-menu-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Всі товари')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0187f7f5-2981-4752-a6a4-c113278784ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фрукти, овочі",
+      "targets": [
+        ["linkText=Фрукти, овочі", "linkText"],
+        ["css=.menu-categories__link_hovered > .menu-categories__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Фрукти, овочі')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/category/frukty-ovochi-4788')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фрукти, овочі')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9792a477-e5d4-41dc-bfbb-1fe536c94f71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-control",
+      "targets": [
+        ["css=.filter-control", "css:finder"],
+        ["xpath=//silpo-filters-control/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a26574a9-239d-4c44-a719-0a34c887c3bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c1569748993-9 > .filter-item__header",
+      "targets": [
+        ["css=.ng-tns-c1569748993-9 > .filter-item__header", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div[7]/silpo-filters-filter-item/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/silpo-filters-filter-item/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fe2c861-362d-4f8f-bff4-913916fc1c3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.range-filter__input:nth-child(2) .ng-untouched",
+      "targets": [
+        ["css=.range-filter__input:nth-child(2) .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div[7]/silpo-filters-filter-item/div/div[2]/silpo-filters-range-filter/div/div/ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef3cf05d-3613-4b79-9f40-1fcf51b245da",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='number'])[2]",
+      "targets": [
+        ["css=.field-control > .ng-touched", "css:finder"],
+        ["xpath=(//input[@type='number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div[7]/silpo-filters-filter-item/div/div[2]/silpo-filters-range-filter/div/div/ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1498"
+    }, {
+      "id": "f98b938c-34a7-43dd-b8b4-7d5bd04903e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ft-font-size-small",
+      "targets": [
+        ["css=.ft-font-size-small", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[3]/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b677224-5471-4325-ac02-49ee8a79817b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button-container",
+      "targets": [
+        ["css=.button-container", "css:finder"],
+        ["xpath=//ecomui-pagination/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2539a89-c414-4a4a-ab35-14d8afbf7ad2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ft-flex-grow",
+      "targets": [
+        ["css=.ft-flex-grow", "css:finder"],
+        ["xpath=//button/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Показати ще')]", "xpath:innerText"]
+      ],
+      "value": "Показати ще"
+    }]
+  }, {
+    "id": "4ca7cf76-544a-4b27-8251-760128dc91e2",
+    "name": "Invalid Price Range (>MAX)",
+    "commands": [{
+      "id": "1a301b81-fd5b-4508-b11e-ad46473d1c9c",
+      "comment": "",
+      "command": "open",
+      "target": "https://silpo.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff26ebad-9319-4aca-a8ff-fd58cb0494df",
+      "comment": "",
+      "command": "click",
+      "target": "id=category-menu-button",
+      "targets": [
+        ["id=category-menu-button", "id"],
+        ["css=#category-menu-button", "css:finder"],
+        ["xpath=//button[@id='category-menu-button']", "xpath:attributes"],
+        ["xpath=//shop-silpo-category-menu-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Всі товари')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38747589-dc66-42a4-ad28-1073abfd62de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фрукти, овочі",
+      "targets": [
+        ["linkText=Фрукти, овочі", "linkText"],
+        ["css=.menu-categories__link_hovered > .menu-categories__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Фрукти, овочі')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/category/frukty-ovochi-4788')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фрукти, овочі')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "731907f0-49f4-415e-8f9f-a4fb82183dbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-control",
+      "targets": [
+        ["css=.filter-control", "css:finder"],
+        ["xpath=//silpo-filters-control/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cb3109c-d7df-4fb1-b0eb-f72277e3b828",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c1569748993-9 > .filter-item__header",
+      "targets": [
+        ["css=.ng-tns-c1569748993-9 > .filter-item__header", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div[7]/silpo-filters-filter-item/div/div", "xpath:idRelative"],
+        ["xpath=//div[7]/silpo-filters-filter-item/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0654db72-6ece-4f59-8488-6f7dc5b35539",
+      "comment": "",
+      "command": "click",
+      "target": "css=.range-filter__input:nth-child(2) .ng-untouched",
+      "targets": [
+        ["css=.range-filter__input:nth-child(2) .ng-untouched", "css:finder"],
+        ["xpath=(//input[@type='number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div[7]/silpo-filters-filter-item/div/div[2]/silpo-filters-range-filter/div/div/ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e529a7da-1581-4baa-b972-5a8d5e4f423e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='number'])[2]",
+      "targets": [
+        ["css=.field-control > .ng-touched", "css:finder"],
+        ["xpath=(//input[@type='number'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div[7]/silpo-filters-filter-item/div/div[2]/silpo-filters-range-filter/div/div/ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//ecomui-form-field[2]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "06a08dee-f93a-4062-9954-59684ca3a1fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ft-font-size-small",
+      "targets": [
+        ["css=.ft-font-size-small", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[3]/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f38cb6c-f9f5-4a73-8c86-168e3963e093",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.pagination__items",
+      "targets": [
+        ["css=.pagination__items", "css:finder"],
+        ["xpath=//ecomui-pagination/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d520c9dd-24cb-4c67-b050-7b6eda76263e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=1",
+      "targets": [
+        ["linkText=1", "linkText"],
+        ["css=.pagination-item--current", "css:finder"],
+        ["xpath=//a[contains(text(),'1')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/category/frukty-ovochi-4788')])[64]", "xpath:href"],
+        ["xpath=//ecomui-pagination/div/div/a", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "0fc0acdd-5a40-4213-a755-63ecbc11290f",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//silpo-products-list-item//*[contains(text(),'₴') and number(translate(text(),' ₴грн,','')) > 1499]",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .products-list__item .product-card-price__displayPrice", "css:finder"],
+        ["xpath=//silpo-products-list-item[2]/div/shop-silpo-common-product-card/article/div[2]/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b367d6e2-5461-4f19-924c-0e944541b1a8",
+    "name": "Discount Products",
+    "commands": [{
+      "id": "252c46cb-567a-4d51-bb93-bbee9ac5a3ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://silpo.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bad08763-9eff-45b4-865a-b739dd97b04d",
+      "comment": "",
+      "command": "click",
+      "target": "id=category-menu-button",
+      "targets": [
+        ["id=category-menu-button", "id"],
+        ["css=#category-menu-button", "css:finder"],
+        ["xpath=//button[@id='category-menu-button']", "xpath:attributes"],
+        ["xpath=//shop-silpo-category-menu-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Всі товари')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "edbb67a6-f400-408d-8cd0-474443e109ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фрукти, овочі",
+      "targets": [
+        ["linkText=Фрукти, овочі", "linkText"],
+        ["css=.menu-categories__link_hovered > .menu-categories__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Фрукти, овочі')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/category/frukty-ovochi-4788')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Фрукти, овочі')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1abf7130-8ecf-491a-a65e-8715253a5cd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-control",
+      "targets": [
+        ["css=.filter-control", "css:finder"],
+        ["xpath=//silpo-filters-control/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43b10382-8e14-4c95-ba63-0c17d2f4e888",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c1569748993-3 > .filter-item__header",
+      "targets": [
+        ["css=.ng-tns-c1569748993-3 > .filter-item__header", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div/silpo-filters-filter-item/div/div", "xpath:idRelative"],
+        ["xpath=//silpo-filters-filter-item/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a8923af-11c5-4fd7-a481-dbac7e3cc153",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox-value:nth-child(3) > .checkbox",
+      "targets": [
+        ["css=.checkbox-value:nth-child(3) > .checkbox", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[2]/div/silpo-filters-filter-item/div/div[2]/silpo-filters-checkbox-filter/label[3]/div", "xpath:idRelative"],
+        ["xpath=//label[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b5e361c-ffbb-4e6b-bd1b-5760f0a84fcf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ft-font-size-small",
+      "targets": [
+        ["css=.ft-font-size-small", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-serverApp0']/ecomui-modal-component-host/div/silpo-filters-modal/div/div[3]/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "303f8a12-dce2-4bca-850c-5c9f88129c31",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-star-inserted:nth-child(1) > .products-list__item .product-card__labels img",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .products-list__item .product-card__labels img", "css:finder"],
+        ["xpath=//img[@alt='only_online']", "xpath:img"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": "Знижка"
+    }, {
+      "id": "a891bd68-72a5-4921-a160-0be68332a13e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ng-star-inserted:nth-child(2) > .products-list__item .product-card__labels img",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .products-list__item .product-card__labels img", "css:finder"],
+        ["xpath=(//img[@alt='only_online'])[2]", "xpath:img"],
+        ["xpath=//silpo-products-list-item[2]/div/shop-silpo-common-product-card/article/div/div/div/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "47a27c46-07c5-4cdb-bb9e-d1e9239bf550",
+    "name": "Brand Multiselect",
+    "commands": [{
+      "id": "df8e2489-6767-4777-a62b-2af4c475ac9e",
+      "comment": "",
+      "command": "open",
+      "target": "https://silpo.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8db23a57-4c68-4993-bbe9-113e00b7aa86",
+      "comment": "",
+      "command": "click",
+      "target": " id=category-menu-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bb05e71-8f50-44cf-87be-8888eac8b571",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Фрукти, овочі",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a6574b9-78cc-477e-9349-0cd585f4f7ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-control",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ad0cd7d-26e1-42ed-b00b-0ca7c5ddb865",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/silpo-filters-filter-item/div/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9a3ce69-6d14-439e-9ae4-ed96f4c7e68e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox-value:nth-child(33) > .checkbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b513ea8-965a-44df-8c12-53c28f8d800d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox-value:nth-child(24) > .checkbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cae3cd3c-4f92-4da2-be30-4a140ab2dcf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox-value:nth-child(34) > .checkbox",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca52965c-4e9c-4f3c-b931-18ba192af33a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ft-font-size-small",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58f47330-0420-4ee6-944a-064101b6a3d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.filter-control__number",
+      "targets": [],
+      "value": "3"
+    }, {
+      "id": "11de48b9-a512-4dfd-b055-741a7f2315da",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": " css=.products-list:nth-child(1) > .ng-star-inserted:nth-child(1) .product-card__labels:nth-child(1) img:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c232d1fd-17b4-4dd7-ba9e-08d267557518",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fa20925-62c7-449b-a59f-832953b8bddd"]
+  }],
+  "urls": ["https://silpo.ua/"],
+  "plugins": []
+}
